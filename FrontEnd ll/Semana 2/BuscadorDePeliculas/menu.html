@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Peliculas</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Busca Tus Peliculas Favoritas</h1>
+
+        <section class="formulario-seccion">
+            <h2 id="form-titulo">Agregar Nueva Pelicula</h2>
+            <form id="formulario-pelicula">
+                <input type="hidden" id="pelicula-id">
+                <input type="text" id="titulo" placeholder="Titulo de la pelicula" required>
+                <input type="text" id="genero" placeholder="Genero" required>
+                <input type="url" id="imagen" placeholder="Caratula(URL)" required>
+                <button type="submit" id="btn-guardar">Guardar Pelicula</button>
+            </form>
+        </section>
+
+        <section class="filtros-seccion">
+            <input type="text" id="buscador" placeholder="Buscar por titulo...">
+            <select id="filtro-genero">
+                <option value="">Todos los generos</option>
+            </select>
+        </section>
+
+        <main id="lista-peliculas" class="grid-peliculas">
+            </main>
+    </div>
+
+    <script src="buscador.js"></script>
+</body>
+</html>

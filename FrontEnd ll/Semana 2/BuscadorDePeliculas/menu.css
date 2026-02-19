@@ -1,0 +1,166 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #141414;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #E50914;
+    text-align: left;
+    font-size: 38px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.formulario-seccion {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 35px;
+    border-bottom: 4px solid #E50914;
+}
+
+#form-titulo {
+    font-size: 18px;
+    color: #b3b3b3;
+    margin: 0 0 15px 0;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+form input {
+    background: #333;
+    color: #fff;
+    border: 0;
+    padding: 12px;
+    border-radius: 3px;
+    flex: 1;
+    min-width: 180px;
+}
+
+form input:focus {
+    outline: 1px solid #b3b3b3;
+}
+
+#btn-guardar {
+    background-color: #E50914;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#btn-guardar:hover {
+    background: #b20710;
+    transition: 0.2s;
+}
+
+.filtros-seccion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+#buscador {
+    flex: 2;
+    background: #141414;
+    border: 1px solid #b3b3b3;
+    color: #fff;
+    padding: 8px;
+}
+
+#filtro-genero {
+    flex: 1;
+    background: #141414;
+    color: #fff;
+    border: 1px solid #b3b3b3;
+    padding: 8px;
+}
+
+.grid-peliculas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.tarjeta-pelicula {
+    background: #1f1f1f;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.tarjeta-pelicula:hover {
+    transform: scale(1.05);
+    z-index: 5;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.8);
+}
+
+.tarjeta-pelicula img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-pelicula h3 {
+    font-size: 15px;
+    margin: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.tarjeta-pelicula p {
+    font-size: 13px;
+    color: #b3b3b3;
+    margin: 0 10px 12px 10px;
+}
+
+.acciones {
+    display: flex;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.acciones button {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-editar {
+    background: #444;
+}
+
+.btn-editar:hover {
+    background: #555;
+}
+
+.btn-eliminar {
+    background: #000;
+}
+
+.btn-eliminar:hover {
+    color: #E50914;
+}
